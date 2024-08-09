@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Especifica el tipo de documento y la versión de HTML -->
     <meta charset="UTF-8">
-    <!-- Configura el viewport para que el sitio sea responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título de la página que aparece en la pestaña del navegador -->
     <title>About me</title>
 
     <!-- STYLESHEET -->
-   <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluye el CSS de Slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 <body>
-    <!-- Sección de encabezado del sitio -->
     <header>
         <h1>Somethings about me</h1>
     </header>
-    <!-- Barra de navegación con enlaces -->
     <nav>
         <ul>
             <li><a href="Index.html">Home</a></li>
@@ -24,17 +22,37 @@
             <li><a href="https://www.instagram.com/jacobflutt11199/">Instagram account</a></li>
         </ul>
     </nav>
-    <!-- Contenido principal de la página -->
     <main>
         <section>
             <h2>Acerca de este sitio</h2>
-            <p>Conoce mis trabajos mas recientes y de los cuales me siento orgulloso</p>
-            <img src="Angwy.png">
+            <p>Conoce mis trabajos más recientes y de los cuales me siento orgulloso</p>
+            
+            <!-- Slider de imágenes -->
+            <div class="image-slider">
+                <div><img src="Mundo_de_nubes.png" alt="Imagen 1"></div>
+                <div><img src="Ananse_Ref.png" alt="Imagen 2"></div>
+                <div><img src="Rabbit_Hole_Sikyatavo_Plushies.png" alt="Imagen 3"></div>
+            </div>
         </section>
     </main>
-    <!-- Pie de página del sitio -->
     <footer>
         <p>&copy; 2024 My first website</p>
     </footer>
+
+    <!-- Incluye jQuery y Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Inicializa el slider -->
+    <script>
+        $(document).ready(function(){
+            $('.image-slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+            });
+        });
+    </script>
 </body>
 </html>
