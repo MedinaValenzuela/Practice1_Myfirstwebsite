@@ -60,6 +60,36 @@ nav ul li a {
 main {
     /* Relleno interno del contenido principal */
     padding: 1rem;
+    /* Asegúrate de que las imágenes del slider se adapten correctamente al contenedor */
+.image-slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+/* Opcional: puedes personalizar los puntos de navegación (dots) del slider */
+.slick-dots li button:before {
+    color: #000; /* Cambia el color de los puntos */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #3498db; /* Color del punto activo */
+}
+
+/* Personaliza las flechas de navegación (arrows) */
+.slick-prev:before, .slick-next:before {
+    color: #000; /* Cambia el color de las flechas */
+}
+
+.slick-prev, .slick-next {
+    font-size: 24px; /* Tamaño de las flechas */
+}
+
+/* Añade margen superior e inferior al slider */
+.image-slider {
+    margin: 20px 0;
+}
+
 }
 
 /* Estilos para el pie de página */
