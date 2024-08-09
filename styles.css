@@ -60,6 +60,11 @@ nav ul li a {
 main {
     /* Relleno interno del contenido principal */
     padding: 1rem;
+    /* Contenedor del slider centrado */
+.image-slider {
+    max-width: 800px; /* Define un ancho máximo para el slider */
+    margin: 20px auto; /* Centra el slider horizontalmente */
+}
     /* Asegúrate de que las imágenes del slider se adapten correctamente al contenedor */
 .image-slider img {
     width: 100%;
