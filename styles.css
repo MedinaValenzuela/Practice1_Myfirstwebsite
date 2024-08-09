@@ -26,36 +26,60 @@ header {
 
 /* Estilos para la barra de navegación */
 nav ul {
-    /* Elimina el estilo de lista por defecto */
-    list-style: none;
-    /* Elimina el relleno interno */
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    /* Alineación del texto en el centro */
-    text-align: center;
-    /* Color de fondo de la barra de navegación */
-    background-color: #444;
-    /* Elimina los márgenes */
-    margin: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-/* Estilos para los elementos de la lista en la barra de navegación */
 nav ul li {
-    /* Muestra los elementos en línea */
-    display: inline;
-    /* Elimina los márgenes */
-    margin: 0;
+    float: left;
 }
 
-/* Estilos para los enlaces en la barra de navegación */
 nav ul li a {
-    /* Color del texto del enlace */
-    color: #fff;
-    /* Relleno interno del enlace */
-    padding: 0.5rem 1rem;
-    /* Elimina el subrayado por defecto */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Estilos para el dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar el menú desplegable al pasar el mouse sobre el dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 /* Estilos para el contenido principal */
 main {
     /* Relleno interno del contenido principal */
